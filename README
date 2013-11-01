@@ -1,0 +1,8 @@
+A quick program to talk to a TM1640 LED connected to two Linux GPIOs, the
+"reference board" is a Deal Extreme (JY-MCU 16X).
+
+Be careful, there are pullups to +5V on the board when you connect them
+to 3v3 GPIOs!
+
+Defaults are set for the GPIOs on a Toradex T20 board on a Iris carrier.
+
