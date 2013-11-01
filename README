@@ -1,8 +1,14 @@
-A quick program to talk to a TM1640 LED connected to two Linux GPIOs, the
+A quick program to talk to a TM1640 16x7-segment LED connected to two Linux GPIOs, the
 "reference board" is a Deal Extreme (JY-MCU 16X).
 
 Be careful, there are pullups to +5V on the board when you connect them
 to 3v3 GPIOs!
 
 Defaults are set for the GPIOs on a Toradex T20 board on a Iris carrier.
+
+  > #define DEFAULT_DIN     29 /* gpio 29 == SODI-98, Iris X16-13 */ 
+  > #define DEFAULT_SCLK    89 /* gpio 89 == SOD-103, Iris X16-15 */
+
+You can change those pin mappings with the commandline options.
+
 
